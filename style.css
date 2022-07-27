@@ -42,14 +42,15 @@ header {
 }
 
 #logo {
-  padding: 0 20px;
+  padding-left: 5%;
   font-size: 25px;
   font-weight: bold;
 }
 
 nav {
+  padding-right: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 nav li a {
