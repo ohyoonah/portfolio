@@ -1,6 +1,7 @@
 // 헤더 스크롤 시 배경색 투명 --> 흰색으로 변경
-const header = document.querySelector('header');
+const header = document.querySelector('#header');
 const up = document.getElementById('up');
+
 // getBoundingClientRect().height로 해당 DOM의 높이를 변수로 잡음
 const headerHeight = header.getBoundingClientRect().height;
 
@@ -15,8 +16,8 @@ window.addEventListener('scroll', () => {
 });
 
 
-// 메뉴 스크롤 효과
-const nav = document.querySelectorAll('nav a');
+// 메뉴 링크 이동시 스크롤 효과
+const nav = document.querySelectorAll('header a');
 
 function scroll(e) {
   e.preventDefault();

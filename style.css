@@ -33,7 +33,7 @@ a {
 }
 
 /* header */
-header {
+#header {
   width: var(--content-Width);
   height: 70px;
   line-height: 70px;
@@ -73,21 +73,6 @@ nav li a:hover {
   color: var(--light-gray);
 }
 
-/* main */
-#home,
-#about-me,
-#skill,
-#project {
-  width: var(--content-Width);
-  height: var(--content-Height);
-}
-
-h2 {
-  font-size: 60px;
-  padding: var(--padding1);
-  text-align: center;
-}
-
 #home {
   background-image: url('img/background.jpg');
   background-size: cover;
@@ -113,6 +98,21 @@ h2 {
 
 #home > a > i:hover {
   color: var(--light-gray);
+}
+
+/* main */
+#home,
+#about-me,
+#skill,
+#project {
+  width: var(--content-Width);
+  height: var(--content-Height);
+}
+
+h2 {
+  font-size: 60px;
+  padding: var(--padding1);
+  text-align: center;
 }
 
 #about-me > section {
