@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 
 
 // 메뉴 스크롤 효과
-const nav = document.querySelectorAll('header a');
+const nav = document.querySelectorAll('nav a');
 
 function scroll(e) {
   e.preventDefault();

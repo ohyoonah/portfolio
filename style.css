@@ -3,6 +3,8 @@
   --black: #000;
   --white: #fff;
   --pink: #f569d4;
+  --dark-gray: #8e8e8e;
+  --light-gray: #c5c5c5;
   /* size */
   --content-Width: 100%;
   --content-Height: 100vh;
@@ -68,20 +70,19 @@ nav li a:hover {
   position: fixed;
   bottom: 2%;
   right: 2%;
-  color: white;
+  color: var(--light-gray);
 }
 
 /* main */
 #home,
 #about-me,
 #skill,
-#project,
-#contact {
+#project {
   width: var(--content-Width);
   height: var(--content-Height);
 }
 
-main h2 {
+h2 {
   font-size: 60px;
   padding: var(--padding1);
   text-align: center;
@@ -101,7 +102,17 @@ main h2 {
   font-size: 100px;
   font-weight: bolder;
   color: var(--white);
-  text-shadow: 10px 5px 20px #8e8e8e;
+  text-shadow: 10px 5px 20px var(--dark-gray);
+}
+
+#home > a > i {
+  font-size: 40px;
+  margin-top: 150px;
+  color: var(--dark-gray);
+}
+
+#home > a > i:hover {
+  color: var(--light-gray);
 }
 
 #about-me > section {
@@ -113,15 +124,16 @@ main h2 {
 
 #me-img {
   width: 25%;
-  margin-right: 10%;
+  margin-right: 100px;
 }
 
 #me-img img {
   width: 100%;
-  min-width: 400px;
+  min-width: 350px;
 }
 
 #me-info {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -134,7 +146,7 @@ main h2 {
 
 .me-info-block i {
   font-size: 60px;
-  margin-right: 10%;
+  margin-right: 40px;
   margin-top: 10px;
 }
 
@@ -156,31 +168,35 @@ main h2 {
   background-color: #f0f;
 }
 
-#contact {
-  background-color: #00f;
+#skill-img img {
+  width: 100px;
 }
 
 /* footer */
 footer {
   width: var(--content-Width);
-  height: 20vh;
+}
+
+footer .sns {
+  display: flex;
+  justify-content: center;
 }
 
 footer .sns li {
-  padding: 0 20px;
-  float: right;
-}
-
-footer .sns li:not(:first-child) {
-  border-right: 1px solid #e9e9e9;
+  padding: 30px;
 }
 
 footer .sns li a {
-  font-size: 30px;
+  font-size: 50px;
+}
+
+footer .sns li a:hover {
+  color: var(--pink);
 }
 
 #copyright {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
-  color: #8e8e8e;
+  color: var(--dark-gray);
+  padding-bottom: 10px;
 }
