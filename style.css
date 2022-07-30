@@ -100,11 +100,10 @@ nav li a:hover {
   color: var(--light-gray);
 }
 
-/* main */
 #home,
 #about-me,
-#skill,
-#project {
+#skill
+{
   width: var(--content-Width);
   height: var(--content-Height);
 }
@@ -113,6 +112,10 @@ h2 {
   font-size: 60px;
   padding: var(--padding1);
   text-align: center;
+}
+
+#about-me {
+  background-color: #8e8e8e;
 }
 
 #about-me > section {
@@ -161,15 +164,58 @@ h2 {
 }
 
 #skill {
-  background-color: #ff0;
-}
-
-#project {
-  background-color: #f0f;
+  background-color: #be5ec2;
 }
 
 #skill-img img {
   width: 100px;
+}
+
+#project {
+  background-color: #8e8e8e;
+  padding: var(--padding1);
+}
+
+.swiper-slide {
+  width: 30%;
+  margin-right: 10px;
+  height: 300px;
+}
+.swiper-slide.slide01 {
+  background-color: #be5ec2;
+}
+.swiper-slide.slide02 {
+  background-color: #f862a7;
+}
+.swiper-slide.slide03 {
+  background-color: #ff7b87;
+}
+.swiper-slide.slide04 {
+  background-color: #ffa26a;
+}
+.swiper-slide.slide05 {
+  background-color: #ffce5e;
+}
+.swiper-slide.slide06 {
+  background-color: #f9f871;
+}
+.swiper-slide.slide07 {
+  background-color: #be5ec2;
+}
+.swiper-slide.slide08 {
+  background-color: #f862a7;
+}
+.swiper-slide.slide09 {
+  background-color: #ff7b87;
+}
+.swiper-slide.slide10 {
+  background-color: #ffa26a;
+}
+.swiper-slide.slide11 {
+  background-color: #ffce5e;
+}
+.swiper-slide.slide12 {
+  background-color: #f9f871;
 }
 
 /* footer */

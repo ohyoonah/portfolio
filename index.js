@@ -32,3 +32,17 @@ function scroll(e) {
 for(var i = 0; i < nav.length; i ++) {
     nav[i].onclick = scroll;
 }
+
+
+// 프로젝트 스와이퍼 효과
+const swiper = new Swiper(".swiper-container", {
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  slideToClickedSlide: true,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
+  },
+});
