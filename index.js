@@ -7,10 +7,12 @@ const headerHeight = header.getBoundingClientRect().height;
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > headerHeight) {
-    header.setAttribute("style", "background: white;");
-    up.setAttribute("style", "display: block");
+    // header.setAttribute("style", "background: white;");
+    header.setAttribute("style", "visibility: hidden;");
+    up.setAttribute("style", "display: block;");
   } else {
-    header.setAttribute("style", "background: transparent;");
+    // header.setAttribute("style", "background: transparent;");
+    header.setAttribute("style", "visibility: visible;");
     up.setAttribute("style", "display: none");
   }
 });
@@ -25,7 +27,7 @@ function scroll(e) {
 
   window.scrollTo ({
       'behavior': 'smooth',
-      'top': target.offsetTop-70
+      'top': target.offsetTop
   });
 }
 
