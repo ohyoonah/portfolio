@@ -7,13 +7,13 @@ const headerHeight = header.getBoundingClientRect().height;
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > headerHeight) {
-    // header.setAttribute("style", "background: white;");
-    header.setAttribute("style", "visibility: hidden;");
-    up.setAttribute("style", "display: block;");
+    // header.setAttribute("style", "visibility: hidden;");
+    header.style.visibility = 'hidden';
+    up.style.display = 'block';
   } else {
     // header.setAttribute("style", "background: transparent;");
-    header.setAttribute("style", "visibility: visible;");
-    up.setAttribute("style", "display: none");
+    header.style.visibility = 'visible';
+    up.style.display = 'none';
   }
 });
 
@@ -53,9 +53,13 @@ const swiper = new Swiper(".swiper-container", {
 // 글자 타이핑 효과
 const homeText = document.getElementById("home-text");
 
-      const typewriter = new Typewriter(homeText, {});
-      typewriter
-        // .pauseFor(2500)
-        .typeString("OH YOON AH PORTFOLIO")
-        .pauseFor(2000)
-        .start();
+const typewriter = new Typewriter(homeText, {});
+typewriter
+   .typeString("OH YOON AH PORTFOLIO")
+   .start()
+
+// 3.5초 후 down-btn 표시(글자 타이핑 끝난 후)
+setTimeout(() => {
+  const downBtn = document.getElementById('down-btn');
+  downBtn.style.display = 'block';
+}, 3500);

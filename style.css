@@ -72,6 +72,7 @@ nav li a:hover {
   bottom: 2%;
   right: 2%;
   color: var(--light-gray);
+  display: none;
 }
 
 #home {
@@ -88,14 +89,19 @@ nav li a:hover {
   text-shadow: 10px 5px 20px var(--dark-gray);
 }
 
-#home > a > i {
-  font-size: 40px;
-  margin-top: 150px;
+#down-btn {
+  font-size: 30px;
+  /* margin-top: 120px; */
   color: var(--dark-gray);
+  display: none;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
 }
 
-#home > a > i:hover {
-  color: var(--light-gray);
+#down-btn:hover {
+  color: var(--pink);
+  text-shadow: 2px 2px 20px var(--pink);
 }
 
 #home,
@@ -118,6 +124,7 @@ h2 {
 
 #about-me > section {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 4rem;
   margin-top: 20px;
 }
