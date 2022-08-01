@@ -177,9 +177,10 @@ h2 {
 }
 
 .swiper-slide {
-  width: 30%;
-  margin-right: 10px;
-  height: 300px;
+  width: 40%;
+  max-width: 350px;
+  margin: 0 10px;
+  height: 60vh;
 }
 .swiper-slide.slide01 {
   background-color: #be5ec2;
@@ -199,23 +200,23 @@ h2 {
 .swiper-slide.slide06 {
   background-color: #f9f871;
 }
-.swiper-slide.slide07 {
-  background-color: #be5ec2;
+
+.swiper-slide > div {
+  text-align: center;
 }
-.swiper-slide.slide08 {
-  background-color: #f862a7;
+
+.project-title {
+  margin: 20px 0;
+  font-size: 20px;
 }
-.swiper-slide.slide09 {
-  background-color: #ff7b87;
+
+.project-img img {
+  width: 80%;
+  height: 300px;
 }
-.swiper-slide.slide10 {
-  background-color: #ffa26a;
-}
-.swiper-slide.slide11 {
-  background-color: #ffce5e;
-}
-.swiper-slide.slide12 {
-  background-color: #f9f871;
+
+.project-description {
+  margin-top: 20px;
 }
 
 /* footer */
