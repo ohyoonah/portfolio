@@ -46,3 +46,14 @@ const swiper = new Swiper(".swiper-container", {
     slideShadows: false,
   },
 });
+
+
+// 글자 타이핑 효과
+const homeText = document.getElementById("home-text");
+
+      const typewriter = new Typewriter(homeText, {});
+      typewriter
+        // .pauseFor(2500)
+        .typeString("OH YOON AH PORTFOLIO")
+        .pauseFor(2000)
+        .start();

@@ -79,11 +79,8 @@ nav li a:hover {
   text-align: center;
 }
 
-#home > div > p:first-child {
-  padding-top: 30vh;
-}
-
-#home > div > p {
+#home-text {
+  padding-top: 250px;
   font-size: 100px;
   font-weight: bolder;
   color: var(--white);
