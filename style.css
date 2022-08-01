@@ -120,47 +120,52 @@ h2 {
 
 #about-me > section {
   display: flex;
-  justify-content: center;
   padding: 0 4rem;
   margin-top: 20px;
 }
 
 #me-img {
-  width: 25%;
-  margin-right: 100px;
+  /* margin-right: 10%; */
+  flex: 1 1 35%;
+  text-align: center;
 }
 
 #me-img img {
   width: 100%;
-  min-width: 350px;
+  max-width: 350px;
 }
 
 #me-info {
-  width: 50%;
+  flex: 1 1 55%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .me-info-block {
   display: flex;
-  width: 50%;
+  width: 30%;
+  align-items: center;
 }
 
 .me-info-block i {
-  font-size: 60px;
-  margin-right: 40px;
-  margin-top: 10px;
+  font-size: 50px;
+  padding-right: 7%;
+  /* flex: 1 1 40%; */
+}
+
+.me-info-block > div {
+  /* flex: 1 1 50%; */
 }
 
 .me-info-block .me-title {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
+
 }
 
 .me-info-block .me-sub {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #skill {
