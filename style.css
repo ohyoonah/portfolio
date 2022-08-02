@@ -44,10 +44,22 @@ a {
   background-color: var(--white);
 }
 
+#nav-icon {
+  display: none;
+  font-size: 25px;
+  position: absolute;
+  left: 40px;
+  cursor: pointer;
+}
+
 #logo {
   padding-left: 5%;
   font-size: 25px;
   font-weight: bold;
+}
+
+.logo-text {
+  color: var(--pink);
 }
 
 nav {
@@ -256,4 +268,41 @@ footer .sns li a:hover {
   text-align: center;
   color: var(--dark-gray);
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--white);
+    text-align: center;
+    padding: 0;
+  }
+
+  nav li:hover {
+    width: 100%;
+    background-color: var(--light-gray);
+  }
+
+  #nav-icon {
+    display: block;
+    color: var(--dark-gray);
+  }
+
+  #logo {
+    text-align: center;
+    padding: 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  #nav-icon.active {
+    color: var(--pink);
+  }
 }

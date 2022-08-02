@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
 
 
 // 메뉴 링크 이동시 스크롤 효과
-const nav = document.querySelectorAll('header a');
+const link = document.querySelectorAll('header a');
 
 function scroll(e) {
   e.preventDefault();
@@ -31,8 +31,8 @@ function scroll(e) {
   });
 }
 
-for(var i = 0; i < nav.length; i ++) {
-    nav[i].onclick = scroll;
+for(var i = 0; i < link.length; i ++) {
+  link[i].onclick = scroll;
 }
 
 
@@ -63,3 +63,13 @@ setTimeout(() => {
   const downBtn = document.getElementById('down-btn');
   downBtn.style.display = 'block';
 }, 3500);
+
+
+// 768px 메뉴 토글버튼
+const navIcon = document.querySelector('#nav-icon');
+const nav = document.querySelector('nav');
+
+navIcon.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  navIcon.classList.toggle('active');
+});
