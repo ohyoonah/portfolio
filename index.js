@@ -47,6 +47,10 @@ const swiper = new Swiper(".swiper-container", {
     rotate: 30,
     slideShadows: false,
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  }
 });
 
 
