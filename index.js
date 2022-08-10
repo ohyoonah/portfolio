@@ -8,10 +8,16 @@ const headerHeight = header.getBoundingClientRect().height;
 window.addEventListener('wheel', (e) => {
   if(e.deltaY > 0) {
       header.style.visibility = 'hidden';
-      up.style.display = 'block';
   } else {
       header.style.visibility = 'visible';
-      up.style.display = 'none';
+  }
+});
+// 헤더 위치값 잡아서 #home에 위치하면 up버튼 사라지게
+window.addEventListener('scroll', () => {
+  if (window.scrollY > headerHeight) {
+    up.style.display = 'block';
+  } else {
+    up.style.display = 'none';
   }
 });
 

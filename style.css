@@ -149,7 +149,7 @@ h2 {
 }
 
 #about-me {
-  background-color: #8e8e8e;
+  background-color: var(--light-gray);
 }
 
 #about-me > section {
@@ -204,7 +204,6 @@ h2 {
 }
 
 #skill {
-  background-color: #be5ec2;
 }
 
 #skill-img img {
@@ -212,7 +211,7 @@ h2 {
 }
 
 #project {
-  background-color: #8e8e8e;
+  background-color: var(--light-gray);
   padding: var(--padding1);
   position: relative;
 }
