@@ -19,6 +19,8 @@
 * {
   margin: 0;
   padding: 0;
+  /* #home-text color 오류남
+  color: var(--black); */
 }
 
 body {
@@ -240,7 +242,8 @@ h2 {
 }
 
 .skill-box:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  transition: linear 0.3s;
 }
 
 #project {
@@ -254,21 +257,11 @@ h2 {
   max-width: 450px;
   margin: 0 15px;
 }
-.swiper-slide.slide01 {
-  background-color: #be5ec2;
-}
-.swiper-slide.slide02 {
-  background-color: #f862a7;
-}
-.swiper-slide.slide03 {
-  background-color: #ff7b87;
-}
-.swiper-slide.slide04 {
-  background-color: #ffa26a;
-}
-.swiper-slide.slide05 {
-  background-color: #ffce5e;
-}
+.swiper-slide.slide01,
+.swiper-slide.slide02,
+.swiper-slide.slide03,
+.swiper-slide.slide04, 
+.swiper-slide.slide05,
 .swiper-slide.slide06 {
   background-color: #f9f871;
 }
@@ -311,6 +304,23 @@ h2 {
 
 .project-description {
   margin-top: 20px;
+}
+
+.project-button {
+  padding: 20px 0;
+}
+
+.project-button > button {
+  width: 40%;
+  padding: 10px 0;
+  border: 1px solid var(--pink);
+  background-color: var(--white);
+}
+
+.project-button > button:hover {
+  background-color: var(--pink);
+  transition: linear 0.3s;
+  color: var(--white);
 }
 
 /* footer */
