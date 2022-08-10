@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #footer-main {
+        display: flex;
+        width: 100%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 10%;
+        border-right: solid 1px black;
+      }
+      form > section {
+        margin-bottom: 30px;
+      }
+      #sec1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      #sec1 > div {
+        /* flex: 1 1 50%; */
+        width: 48%;
+      }
+      form > section > div {
+        display: flex;
+        flex-direction: column;
+      }
+      #sns {
+        padding: 0 10%;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <h2>Contact</h2>
+      <div id="footer-main">
+        <form id="form">
+          <section id="sec1">
+            <div>
+              <label>Name</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" />
+            </div>
+          </section>
+          <section id="sec2">
+            <div>
+              <label>Message</label>
+              <textarea name="textarea"></textarea>
+            </div>
+          </section>
+          <button id="sendBtn">send</button>
+        </form>
+        <div id="sns">
+          <div>SNS</div>
+          <div>SNS</div>
+          <div>SNS</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

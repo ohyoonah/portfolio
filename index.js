@@ -23,10 +23,10 @@ const link = document.querySelectorAll('header a');
 function scroll(e) {
   e.preventDefault();
   var target = document.querySelector(this.getAttribute('href'));
-
+  
   window.scrollTo ({
       'behavior': 'smooth',
-      'top': target.offsetTop
+      'top': target.offsetTop - 70
   });
 }
 

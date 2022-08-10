@@ -176,27 +176,78 @@
     </main>
     <footer id="contact">
       <h2>CONTACT</h2>
-      <div class="sns">
-        <li id="email">
-          <a href="mailto:dhdbsdk33@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-        </li>
-        <li id="instargram">
-          <a href="https://www.instagram.com/y_oo__n___ah/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-        <li id="blog">
-          <a href="https://ohyoonah.github.io/" target="_blank">
-            <i class="fa-solid fa-rss"></i>
-          </a>
-        </li>
-        <li id="github">
-          <a href="https://github.com/ohyoonah" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
+      <div id="footer-main">
+        <form id="form">
+          <section id="sec1">
+            <div>
+              <label>Name</label>
+              <input
+                id="send-name"
+                type="text"
+                name="name"
+                placeholder="Write down your name"
+              />
+            </div>
+            <div>
+              <label>Your Email</label>
+              <input
+                id="send-mail"
+                type="email"
+                name="email"
+                placeholder="id@email.com"
+              />
+            </div>
+          </section>
+          <section id="sec2">
+            <div>
+              <label>Message</label>
+              <textarea
+                id="send-msg"
+                name="message"
+                placeholder="Write down the message you want to send me."
+              ></textarea>
+            </div>
+          </section>
+          <button id="send-button">send</button>
+        </form>
+        <div id="sns">
+          <div id="sns-email">
+            <span class="footer-title">Email</span>
+            <span class="sns-text">dhdbsdk33@gmail.com</span>
+          </div>
+          <div id="sns-blog">
+            <span class="footer-title">Blog</span>
+            <a
+              class="sns-text"
+              id="blog"
+              href="https://ohyoonah.github.io/"
+              target="_blank"
+            >
+              <i class="fa-solid fa-rss"></i>
+            </a>
+          </div>
+          <div id="sns-social">
+            <span class="footer-title">Social</span>
+            <div>
+              <a
+                class="sns-text"
+                id="instagram"
+                href="https://www.instagram.com/y_oo__n___ah/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                class="sns-text"
+                id="github"
+                href="https://github.com/ohyoonah"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
       <p id="copyright">Copyright 2022. ohyoonah. all rights reserved.</p>
     </footer>
