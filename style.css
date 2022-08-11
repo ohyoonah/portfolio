@@ -390,6 +390,7 @@ form > section > div {
   height: 40px;
   font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #sns {
@@ -470,5 +471,17 @@ form > section > div {
 
   #nav-icon.active {
     color: var(--pink);
+  }
+
+  #footer-main {
+    display: block;
+  }
+
+  form {
+    border: 0;
+  }
+
+  #sns {
+    display: none;
   }
 }
