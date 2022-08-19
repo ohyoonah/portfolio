@@ -49,6 +49,8 @@ a {
   position: fixed;
   top: 0;
   background-color: var(--white);
+  /* z-index를 설정해 줌으로써 fixed 겹침 문제 해결 */
+  z-index: 1;
 }
 
 #nav-icon {
