@@ -12,10 +12,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2? family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <script
       src="https://kit.fontawesome.com/d86f326fcd.js"
       crossorigin="anonymous"
@@ -25,8 +21,12 @@
   <body>
     <header>
       <div id="header">
-        <a href="#" id="nav-icon"><i class="fas fa-bars"></i></a>
-        <div id="logo"><a href="#home">Yoonah's portfolio</a></div>
+        <a href="#" id="nav-icon">
+          <i class="fas fa-bars"></i>
+        </a>
+        <div id="logo">
+          <a href="#home">Yoonah's portfolio</a>
+        </div>
         <nav>
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#skill">Skills</a></li>
@@ -34,89 +34,148 @@
           <li><a href="#contact">Contact</a></li>
         </nav>
       </div>
-      <a href="#home" id="up"><i class="fa-solid fa-circle-arrow-up"></i></a>
-      <div id="home">
-        <div id="home-text"></div>
-        <div id="home-text-description">소개글 입력.</div>
-        <a href="#about-me" id="down-btn"
-          ><i class="fa-solid fa-angles-down"></i
-        ></a>
-      </div>
+      <a href="#home" id="up">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+      </a>
     </header>
+    <div id="home">
+      <div id="home-text"></div>
+      <div id="home-text-description">
+        안녕하세요 <br />
+        프론트엔드 개발자 오윤아 입니다
+      </div>
+      <a href="#about-me" id="down-btn"
+        ><i class="fa-solid fa-angles-down"></i
+      ></a>
+    </div>
     <main>
       <div id="about-me">
         <h2>ABOUT ME</h2>
-        <section>
-          <div id="me-img"><img src="img/me.jpg" alt="얼굴 사진" /></div>
-          <div id="me-info">
-            <div class="me-info-block">
-              <i class="fa-solid fa-user"></i>
-              <div>
-                <span class="me-title">이름</span>
-                <span class="me-sub">오윤아</span>
-              </div>
-            </div>
-            <div class="me-info-block">
-              <i class="fa-solid fa-cake-candles"></i>
-              <div>
-                <span class="me-title">생년월일</span>
-                <span class="me-sub">1999.01.06</span>
-              </div>
-            </div>
-            <div class="me-info-block">
-              <i class="fa-solid fa-location-dot"></i>
-              <div>
-                <span class="me-title">주소</span>
-                <span class="me-sub">서울시 영등포구</span>
-              </div>
-            </div>
-            <div class="me-info-block">
-              <i class="fa-solid fa-phone"></i>
-              <div>
-                <span class="me-title">연락처</span>
-                <span class="me-sub">010-2821-9873</span>
-              </div>
-            </div>
-            <div class="me-info-block">
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <span class="me-title">이메일</span>
-                <span class="me-sub">dhdbsdk33@gmail.com</span>
-              </div>
-            </div>
+        <div id="about-me-contents">
+          <img src="img/me_no_back.png" alt="프로필 사진" />
+          <div class="profile">
+            <h3>PROFILE</h3>
+            <ul>
+              <li class="about-contents">
+                <span class="about-title">이름</span>
+                <span class="about-body">오윤아</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">생년월일</span>
+                <span class="about-body">1999.01.06</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">주소</span>
+                <span class="about-body">서울시 영등포구</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">연락처</span>
+                <span class="about-body">010.2821.9873</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">이메일</span>
+                <span class="about-body">dhdbsdk33@gmail.com</span>
+              </li>
+            </ul>
           </div>
-        </section>
+          <div class="education">
+            <h3>EDUCATION</h3>
+            <ul>
+              <li class="about-contents">
+                <span class="about-title">백석대학교 컴퓨터공학부</span>
+                <span class="about-body">2018.03 ~ 2022.08</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title"
+                  >엘리스 아카데미<br />AI트랙 과정</span
+                >
+                <span class="about-body">2022.07 ~ 2022.12</span>
+              </li>
+            </ul>
+          </div>
+          <div class="license">
+            <h3>LICENSE</h3>
+            <ul>
+              <li class="about-contents">
+                <span class="about-title">컴퓨터활용능력 1급</span>
+                <span class="about-body">2021.03</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">GTQ 그래픽기술자격 1급</span>
+                <span class="about-body">2021.04</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">한국사능력검정 2급</span>
+                <span class="about-body">2021.06</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">정보처리기사</span>
+                <span class="about-body">2021.11</span>
+              </li>
+            </ul>
+          </div>
+          <div class="award">
+            <h3>AWARD</h3>
+            <ul>
+              <li class="about-contents">
+                <span class="about-title"
+                  >IIBC Start-up Invention Contest 단체상</span
+                >
+                <span class="about-body">2020</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">교내 Smart IT 경진대회 금상</span>
+                <span class="about-body">2020</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="skill">
-        <h2>SKILLS</h2>
-        <div id="skill-main">
+        <div id="skill-block">
+          <h2>SKILLS</h2>
           <div class="skill-box">
-            <div class="skill-box-title">HTML</div>
-            <img src="img/html.png" alt="html" />
-          </div>
-          <div class="skill-box">
-            <div class="skill-box-title">CSS</div>
-            <img src="img/css.png" alt="css" />
-          </div>
-          <div class="skill-box">
-            <div class="skill-box-title">JavaScript</div>
-            <img src="img/js.png" alt="js" />
-          </div>
-          <div class="skill-box">
-            <div class="skill-box-title">Python</div>
-            <img src="img/python.png" alt="python" />
-          </div>
-          <div class="skill-box">
-            <div class="skill-box-title">Git</div>
-            <img src="img/git.png" alt="git" />
-          </div>
-          <div class="skill-box">
-            <div class="skill-box-title">GitHub</div>
-            <img src="img/github.png" alt="github" />
-          </div>
-          <div class="skill-box">
-            <div class="skill-box-title">Photoshop</div>
-            <img src="img/photoshop.png" alt="photoshop" />
+            <div class="skill-contents">
+              <img src="img/skill-html.png" alt="html" />
+              <div class="skill-bar">
+                <div class="skill-bar-html"></div>
+              </div>
+            </div>
+            <div class="skill-contents">
+              <img src="img/skill-css.png" alt="css" />
+              <div class="skill-bar"></div>
+            </div>
+            <div class="skill-contents">
+              <img src="img/skill-javascript.png" alt="JavaScript" />
+              <div class="skill-bar"></div>
+            </div>
+            <div class="skill-contents">
+              <img src="img/skill-react.png" alt="react" />
+              <div class="skill-bar"></div>
+            </div>
+            <div class="skill-contents">
+              <img src="img/skill-node.png" alt="node" />
+              <div class="skill-bar"></div>
+            </div>
+            <div class="skill-contents">
+              <img src="img/skill-git.png" alt="git" />
+              <div class="skill-bar"></div>
+            </div>
+            <div class="skill-contents">
+              <img src="img/skill-python.png" alt="python" />
+              <div class="skill-bar"></div>
+            </div>
+            <div class="skill-contents">
+              <img
+                src="img/skill-styledcomponents.png"
+                alt="styledcomponents"
+              />
+              <div class="skill-bar"></div>
+            </div>
+            <div class="skill-contents">
+              <img src="img/skill-bootstrap.png" alt="bootstrap" />
+              <div class="skill-bar"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -247,48 +306,57 @@
     </main>
     <footer id="contact">
       <h2>CONTACT</h2>
-      <div id="footer-main">
-        <form id="form">
-          <section id="sec1">
+      <div id="footer-contact">
+        <form
+          id="form"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbzdBcr6ofH045NmZJmOFkE8bTzfNjPNo1LGIW7wMeR4OFyeB_ktYvMI6DEo94iyb22-/exec"
+          target="frAttachFiles"
+        >
+          <div class="input-box1">
             <div>
-              <label>Name</label>
+              <span>Name</span>
               <input
                 id="send-name"
-                type="text"
+                type="name"
                 name="name"
-                placeholder="Write down your name"
+                placeholder="이름"
                 required="true"
               />
             </div>
             <div>
-              <label>Your Email</label>
+              <span>Your Email</span>
               <input
-                id="send-mail"
+                id="send-email"
                 type="email"
                 name="email"
-                placeholder="id@email.com"
+                placeholder="이메일"
                 required="true"
               />
             </div>
-          </section>
-          <section id="sec2">
+          </div>
+          <div class="input-box2">
             <div>
-              <label>Message</label>
+              <span>Message</span>
               <textarea
-                id="send-msg"
+                id="send-message"
+                type="message"
                 name="message"
-                placeholder="Write down the message you want to send me."
+                placeholder="메시지를 입력해 주세요."
+                required="true"
               ></textarea>
             </div>
-          </section>
-          <button id="send-button">send</button>
+          </div>
+          <p id="error"></p>
+          <button type="submit" id="send-btn">send</button>
         </form>
-        <div id="sns">
-          <div id="sns-email">
+        <iframe name="frAttachFiles" style="display: none"></iframe>
+        <div class="sns">
+          <div class="sns-item">
             <span class="footer-title">Email</span>
             <span class="sns-text">dhdbsdk33@gmail.com</span>
           </div>
-          <div id="sns-blog">
+          <div class="sns-item">
             <span class="footer-title">Blog</span>
             <a
               class="sns-text"
@@ -299,7 +367,7 @@
               <i class="fa-solid fa-rss"></i>
             </a>
           </div>
-          <div id="sns-social">
+          <div class="sns-item">
             <span class="footer-title">Social</span>
             <div>
               <a
@@ -322,9 +390,9 @@
           </div>
         </div>
       </div>
-      <p id="copyright">Copyright 2022. ohyoonah. all rights reserved.</p>
+      <p class="copyright">Copyright 2022. ohyoonah. all rights reserved.</p>
     </footer>
-    <script src="index.js"></script>
     <script src="email.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
