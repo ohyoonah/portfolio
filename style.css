@@ -1,19 +1,20 @@
 @font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   /* color */
-  --black: #252A34;
-  --white: #FDFDFD;
-  --pink: #FF2E63;
-  --mint: #08D9D6;
-  --navy: #112D4E;
-  --dark-gray: #393E46;
-  --light-gray: #EAEAEA;
+  --black: #252a34;
+  --white: #fdfdfd;
+  --pink: #ff2e63;
+  --mint: #08d9d6;
+  --navy: #112d4e;
+  --dark-gray: #393e46;
+  --light-gray: #eaeaea;
   /* size */
   --content-Width: 100%;
   --content-Height: 100vh;
@@ -26,16 +27,14 @@
 * {
   margin: 0;
   padding: 0;
-  /* #home-text color 오류남
-  color: var(--black); */
-  font-family: 'GmarketSansMedium';
+  font-family: "GmarketSansMedium";
 }
 
 body {
   margin: 0 auto;
   overflow-x: hidden;
   color: var(--black);
-  background-color: var(--black);
+  background-color: var(--light-gray);
 }
 
 li {
@@ -44,7 +43,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 /* header */
@@ -64,9 +63,13 @@ a {
   display: none;
   font-size: 2rem;
   position: absolute;
-  left: 2rem;
-  top: 0.3rem;
+  left: 5%;
+  top: 7%;
   cursor: pointer;
+}
+
+#nav-icon:hover {
+  color: var(--pink);
 }
 
 #logo {
@@ -77,10 +80,6 @@ a {
 
 #logo > a {
   font-weight: bolder;
-}
-
-.logo-text {
-  color: var(--pink);
 }
 
 nav {
@@ -99,6 +98,11 @@ nav li a:hover {
   color: var(--pink);
   padding-bottom: 1.3rem;
   border-bottom: var(--pink) solid 0.3rem;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 #up {
@@ -119,7 +123,6 @@ nav li a:hover {
   width: 100%;
   height: 100vh;
   background: var(--black);
-  text-align: start;
   padding: 0 10%;
 }
 
@@ -131,8 +134,7 @@ nav li a:hover {
 }
 
 #home-text-description {
-  display: none;
-  margin-top: 3rem;
+  margin-top: 10vh;
   font-size: 1.5rem;
   color: var(--white);
 }
@@ -163,8 +165,8 @@ h2 {
   text-align: center;
   letter-spacing: -3px;
   display: inline-block;
-  border-bottom: 5px solid var(--pink);
-  margin: 3rem 0;
+  border-bottom: 7px solid var(--pink);
+  margin: 3rem 0 5rem 0;
 }
 
 #about-me {
@@ -172,51 +174,47 @@ h2 {
   background-color: var(--light-gray);
   height: 100vh;
   text-align: center;
+  /* padding: 0 5rem; */
+  /* max-width: 1220px; */
+}
+
+#about-me img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  min-width: 250px;
 }
 
 #about-me-contents {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  padding: 0 5rem;
   flex-wrap: wrap;
   text-align: start;
 }
 
-#about-me-contents img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 300px;
-}
-
 #about-me-contents h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.profile {
-  flex: 1;
+  margin-bottom: 8%;
 }
 
 .about-contents {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 7%;
 }
 
 .about-title {
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 3%;
 }
 
-.education {
-  flex: 1;
-}
-
-.license {
-  flex: 1;
-}
-
+.profile,
+.education,
+.license,
 .award {
   flex: 1;
 }
@@ -224,12 +222,21 @@ h2 {
 #skill {
   text-align: center;
   background: white;
-  /* transform: skew(0deg, -10deg); */
+  /* transform: skew(0deg, -5deg); */
 }
 
 #skill-block {
-  /* transform: skew(0deg, 10deg); */
-  padding: 0 10rem;
+  /* transform: skew(0deg, 5deg); */
+  display: flex;
+  padding-bottom: 5%;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.skill-box {
+  flex: 1;
+  padding: 0 2rem;
 }
 
 .skill-contents {
@@ -237,25 +244,73 @@ h2 {
   align-items: center;
 }
 
+.skill-contents:last-child {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 5%;
+}
+
 .skill-contents img {
-  width: 70px;
-  margin-right: 1.5rem;
+  width: 65px;
+  margin-right: 1.3rem;
 }
 
 .skill-bar {
   background: var(--light-gray);
   width: 100%;
-  height: 7px;
+  height: 10px;
   position: relative;
   border-radius: 16px;
 }
 
-.skill-bar-html {
+.skill-bar-html,
+.skill-bar-css,
+.skill-bar-js {
   position: absolute;
-  height: 7px;
+  height: 10px;
   width: 80%;
   background: var(--pink);
   border-radius: 16px;
+}
+
+.skill-bar-react,
+.skill-bar-sc,
+.skill-bar-git {
+  position: absolute;
+  height: 10px;
+  width: 70%;
+  background: var(--pink);
+  border-radius: 16px;
+}
+
+.skill-bar-node {
+  position: absolute;
+  height: 10px;
+  width: 50%;
+  background: var(--pink);
+  border-radius: 16px;
+}
+
+.skill-text {
+  flex: 1;
+  padding: 0 2rem;
+  line-height: 5rem;
+  text-align: end;
+  letter-spacing: -2px;
+}
+
+.skill-text p {
+  font-size: 1.5rem;
+}
+
+.skill-text span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--pink);
+  background: linear-gradient(to top, var(--light-gray) 50%, transparent 50%);
+  padding: 0 1rem;
+  letter-spacing: -3px;
+  text-shadow: 2px 2px 4px gray;
 }
 
 #project {
@@ -277,14 +332,8 @@ h2 {
 .swiper-slide.slide01,
 .swiper-slide.slide02,
 .swiper-slide.slide03,
-.swiper-slide.slide04, 
-.swiper-slide.slide05,
-.swiper-slide.slide06 {
+.swiper-slide.slide04 {
   background-color: var(--white);
-}
-
-.swiper-slide > div {
-  /* text-align: center; */
 }
 
 .pagination_container {
@@ -292,22 +341,6 @@ h2 {
   height: 100%;
   padding: 30px 0;
 }
-
-/* .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: transparent;
-  border: 1px solid var(--pink);
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  width: 40px;
-  transition: width .5s;
-  border-radius: 5px;
-  background-color: var(--pink);
-  border: 1px solid transparent;
-} */
 
 .project-title {
   text-align: center;
@@ -340,27 +373,26 @@ h2 {
   margin-right: 10px;
 }
 
-.project-button {
+.project-button > a {
+  display: inline-block;
   text-align: center;
-}
-
-.project-button > button {
+  line-height: 50px;
   width: 45%;
   height: 50px;
   border: 1px solid var(--pink);
   border-radius: 5px;
   background-color: var(--white);
-  font-size: 15px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.project-button > button:hover {
+.project-button > a:hover {
   background-color: var(--pink);
   transition: linear 0.3s;
   color: var(--white);
 }
 
-.project-readme-Btn {
+.project-site-Btn {
   margin-right: 20px;
 }
 
@@ -368,6 +400,7 @@ h2 {
 footer {
   text-align: center;
   color: white;
+  background: var(--black);
 }
 
 #footer-contact {
@@ -521,6 +554,11 @@ form span {
 
   #about-me {
     height: 100%;
+    margin-bottom: 10%;
+  }
+
+  #about-me img {
+    display: none;
   }
 
   #about-me-contents {
@@ -528,8 +566,13 @@ form span {
     display: block;
   }
 
-  #about-me-contents img {
-    display: none;
+  #about-me-contents ul {
+    display: flex;
+    margin-bottom: 10%;
+  }
+
+  #about-me-contents ul li {
+    flex: 1;
   }
 
   #me-img,
@@ -539,6 +582,27 @@ form span {
 
   #me-info {
     padding: 0 15%;
+  }
+
+  .skill-box {
+    order: 2;
+    margin-bottom: 10%;
+  }
+
+  .skill-contents {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .skill-contents:last-child {
+    justify-content: space-between;
+  }
+
+  .skill-text {
+    order: 1;
+    text-align: center;
+    margin-bottom: 13%;
+    line-height: 3rem;
   }
 
   .me-info-block {
