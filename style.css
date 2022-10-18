@@ -327,12 +327,6 @@ h2 {
   margin: 0 15px;
   border-radius: 30px;
   padding: 30px;
-}
-
-.swiper-slide.slide01,
-.swiper-slide.slide02,
-.swiper-slide.slide03,
-.swiper-slide.slide04 {
   background-color: var(--white);
 }
 

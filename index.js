@@ -52,16 +52,13 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 // 글자 타이핑 효과
-// const homeText = document.getElementById("home-text-description");
 const homeTextDes = document.getElementById("home-text-description");
 
 const typewriter = new Typewriter(homeTextDes, {});
 typewriter
   .typeString("안녕하세요 :)")
   .pauseFor(100)
-  .typeString("<br/>긍정의 힘으로 포기하지 않고 도전하는")
-  .pauseFor(100)
-  .typeString("<br/>프론트엔드 개발자 오윤아 입니다.")
+  .typeString("<br/>계발하는 개발자 오윤아 입니다.")
   .pauseFor(100)
   .start();
 
@@ -69,7 +66,7 @@ typewriter
 setTimeout(() => {
   const downBtn = document.getElementById("down-btn");
   downBtn.style.display = "block";
-}, 9000);
+}, 5000);
 
 // 768px 메뉴 토글버튼
 const navIcon = document.querySelector("#nav-icon");
