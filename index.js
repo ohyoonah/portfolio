@@ -52,21 +52,16 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 // 글자 타이핑 효과
-const homeTextDes = document.getElementById("home-text-description");
+const homeText = document.getElementById("home-text");
 
-const typewriter = new Typewriter(homeTextDes, {});
-typewriter
-  .typeString("안녕하세요 :)")
-  .pauseFor(100)
-  .typeString("<br/>계발하는 개발자 오윤아 입니다.")
-  .pauseFor(100)
-  .start();
+const typewriter = new Typewriter(homeText, {});
+typewriter.typeString("OH YOON AH PORTFOLIO").pauseFor(100).start();
 
 // 글자 타이핑 끝난 후
 setTimeout(() => {
   const downBtn = document.getElementById("down-btn");
   downBtn.style.display = "block";
-}, 5000);
+}, 4000);
 
 // 768px 메뉴 토글버튼
 const navIcon = document.querySelector("#nav-icon");
@@ -75,4 +70,15 @@ const nav = document.querySelector("nav");
 navIcon.addEventListener("click", () => {
   nav.classList.toggle("active");
   navIcon.classList.toggle("active");
+});
+
+// 스크롤 효과 라이브러리
+AOS.init({
+  offset: 120,
+  delay: 0,
+  duration: 400,
+  easing: "ease",
+  once: false,
+  mirror: false,
+  anchorPlacement: "top-bottom",
 });

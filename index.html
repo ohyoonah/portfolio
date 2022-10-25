@@ -17,6 +17,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -25,7 +28,7 @@
           <i class="fas fa-bars"></i>
         </a>
         <div id="logo">
-          <a href="#home">Yoonah's portfolio</a>
+          <a href="#home"><img src="img/favicon.png" alt="logo" /></a>
         </div>
         <nav>
           <li><a href="#about-me">About Me</a></li>
@@ -39,18 +42,65 @@
       </a>
     </header>
     <div id="home">
-      <div id="home-text">OH YOON AH PORTFOLIO</div>
-      <div id="home-text-description"></div>
+      <img class="background-image1" src="img/background_1.png" alt="form" />
+      <img class="background-image2" src="img/background_2.png" alt="form" />
+      <img class="background-image3" src="img/background_3.png" alt="form" />
+      <div id="home-text"></div>
       <a href="#about-me" id="down-btn"
-        ><i class="fa-solid fa-angles-down"></i
+        ><i class="fa-solid fa-angle-down"></i
       ></a>
     </div>
     <main>
       <div id="about-me">
-        <h2>ABOUT ME</h2>
+        <div class="menu-block">
+          <h2>ABOUT ME</h2>
+        </div>
+        <section
+          class="about-me-section1"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="600"
+        >
+          <div class="about-me-title">
+            "안녕하세요! 계발하는 개발자 오윤아 입니다."
+          </div>
+        </section>
+        <section
+          class="about-me-section2"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="600"
+        >
+          <div class="about-me-description">
+            개발자로서의 3년 후, 5년 후, 10년 후의 미래를 그려보았습니다.
+            <br />3년 후에는 프론트엔드 개발자로서, 개발자로서의 꿈을 가지고
+            출발하는 사람들의 멘토가 될 것입니다.<br />
+            5년 후에는 프론트엔드 뿐만 아니라 백엔드까지 다룰 수 있는 풀스택
+            개발자로서 커리어를 쌓을 것입니다.<br />
+            10년 후에는 사람들이 쉽게 코딩을 접할 수 있도록 영상을 제작할
+            것입니다.
+            <br />개발 트렌드를 분석하고 끊임없이 연구하는, 어제보다 나은
+            개발자가 되겠습니다.
+          </div>
+          <div class="about-me-link">
+            <a
+              href="https://plume-hook-d87.notion.site/Yoonah-Oh-9f5453cd012b434db48bf8ff2334755f"
+              >🔗 Resume</a
+            >
+            <a href="https://github.com/ohyoonah">🔗 Github</a>
 
-        <div id="about-me-contents">
-          <img src="img/me_no_back.png" alt="프로필 사진" />
+            <a href="https://ohyoonah.github.io/">🔗 Blog</a>
+          </div>
+        </section>
+        <section
+          class="about-me-section3"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="600"
+        >
           <div class="profile">
             <h3>PROFILE</h3>
             <ul>
@@ -63,10 +113,6 @@
                 <span class="about-body">1999.01.06</span>
               </li>
               <li class="about-contents">
-                <span class="about-title">주소</span>
-                <span class="about-body">서울시 영등포구</span>
-              </li>
-              <li class="about-contents">
                 <span class="about-title">연락처</span>
                 <span class="about-body">010.2821.9873</span>
               </li>
@@ -76,14 +122,14 @@
             <h3>EDUCATION</h3>
             <ul>
               <li class="about-contents">
-                <span class="about-title">백석대학교 컴퓨터공학부</span>
-                <span class="about-body">2018.03 ~ 2022.08</span>
-              </li>
-              <li class="about-contents">
                 <span class="about-title"
                   >엘리스 아카데미<br />AI트랙 과정</span
                 >
-                <span class="about-body">2022.07 ~ 2022.12</span>
+                <span class="about-body">2022.06 ~ 2022.12</span>
+              </li>
+              <li class="about-contents">
+                <span class="about-title">백석대학교 컴퓨터공학부</span>
+                <span class="about-body">2018.03 ~ 2022.08</span>
               </li>
             </ul>
           </div>
@@ -91,20 +137,16 @@
             <h3>LICENSE</h3>
             <ul>
               <li class="about-contents">
-                <span class="about-title">컴퓨터활용능력 1급</span>
-                <span class="about-body">2021.03</span>
+                <span class="about-title">정보처리기사</span>
+                <span class="about-body">2021.11</span>
               </li>
               <li class="about-contents">
                 <span class="about-title">GTQ 그래픽기술자격 1급</span>
                 <span class="about-body">2021.04</span>
               </li>
               <li class="about-contents">
-                <span class="about-title">한국사능력검정 2급</span>
-                <span class="about-body">2021.06</span>
-              </li>
-              <li class="about-contents">
-                <span class="about-title">정보처리기사</span>
-                <span class="about-body">2021.11</span>
+                <span class="about-title">컴퓨터활용능력 1급</span>
+                <span class="about-body">2021.03</span>
               </li>
             </ul>
           </div>
@@ -123,79 +165,77 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
       <div id="skill">
-        <h2>SKILLS</h2>
-        <div id="skill-block">
-          <div class="skill-box">
-            <div class="skill-contents">
+        <div class="menu-block">
+          <h2>SKILLS</h2>
+        </div>
+        <section
+          class="skill-section1"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="600"
+        >
+          <div class="skill-block">
+            <div class="skill-item">
+              <div class="skill-description"></div>
+              <p>HTML</p>
               <img src="img/skill-html.png" alt="html" />
-              <div class="skill-bar">
-                <div class="skill-bar-html"></div>
-              </div>
             </div>
-            <div class="skill-contents">
+            <div class="skill-item">
+              <div class="skill-description"></div>
+              <p>CSS</p>
               <img src="img/skill-css.png" alt="css" />
-              <div class="skill-bar">
-                <div class="skill-bar-css"></div>
-              </div>
             </div>
-            <div class="skill-contents">
-              <img src="img/skill-javascript.png" alt="JavaScript" />
-              <div class="skill-bar">
-                <div class="skill-bar-js"></div>
-              </div>
+            <div class="skill-item">
+              <div class="skill-description"></div>
+              <p>JavaScript</p>
+              <img src="img/skill-javascript.png" alt="javascript" />
             </div>
-            <div class="skill-contents">
-              <img src="img/skill-react.png" alt="react" />
-              <div class="skill-bar">
-                <div class="skill-bar-react"></div>
-              </div>
+            <div class="skill-item">
+              <div class="skill-description"></div>
+              <p>React</p>
+              <img src="img/skill-react.png" alt="html" />
             </div>
-            <div class="skill-contents">
+            <div class="skill-item">
+              <div class="skill-description"></div>
+              <p>Styled-Components</p>
               <img
                 src="img/skill-styledcomponents.png"
                 alt="styledcomponents"
               />
-              <div class="skill-bar">
-                <div class="skill-bar-sc"></div>
-              </div>
             </div>
-            <div class="skill-contents">
+            <div class="skill-item">
+              <div class="skill-description"></div>
+              <p>Node.js</p>
               <img src="img/skill-node.png" alt="node" />
-              <div class="skill-bar">
-                <div class="skill-bar-node"></div>
-              </div>
             </div>
-            <div class="skill-contents">
+            <div class="skill-item">
+              <div class="skill-description"></div>
+              <p>Git</p>
               <img src="img/skill-git.png" alt="git" />
-              <div class="skill-bar">
-                <div class="skill-bar-git"></div>
-              </div>
             </div>
-            <div class="skill-contents">
-              <img src="img/skill-typescript.png" alt="typescript" />
-              <img src="img/skill-redux.png" alt="redux" />
-              <img src="img/skill-bootstrap.png" alt="bootstrap" />
+            <div class="skill-item">
+              <div class="skill-description"></div>
+              <p>Python</p>
               <img src="img/skill-python.png" alt="python" />
-              <img src="img/skill-photoshop.png" alt="photoshop" />
             </div>
           </div>
-          <div class="skill-text">
-            <p>
-              기본을 탄탄히 하기 위해 <br />
-              <span>HTML / CSS / JavaScript </span> <br />
-              위주로 공부했습니다.
-            </p>
-            <p>JavaScript 프레임워크로는 <span>React</span> 를 공부했고</p>
-            <p>현재는 <span>TypeScript</span> 를 공부하고 있습니다.</p>
-          </div>
-        </div>
+        </section>
       </div>
       <div id="project">
-        <h2>PROJECT</h2>
-        <div class="swiper-container mySwiper">
+        <div class="menu-block">
+          <h2>PROJECT</h2>
+        </div>
+        <section
+          class="swiper-container mySwiper"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="600"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide slide01">
               <div class="project-title"><b>01</b> 오늘의집 클론코딩</div>
@@ -207,9 +247,8 @@
                   오늘의집 스토어 페이지 클론 프로젝트 입니다. 기존 Vanilla JS로
                   제작했던 사이트를, 기능 추가 및 UI 정리를 통해 완성도 있는
                   프로젝트로 발전시키고자 React로 다시 제작했습니다. <br />
-                  무한스크롤 기능을 추가하고 반응형 웹을 고려하여 진행했습니다.
-                  외부 api와의 연동 방법과 서버와 클라이언트 간 CORS 에러에 대해
-                  학습했습니다.
+                  무한스크롤 기능과 반응형 웹을 고려하여 진행했고, 외부 api와의
+                  연동 및 서버와 클라이언트 간 CORS 에러에 대해 학습했습니다.
                 </p>
                 <p><b>참여 인원</b> 1명</p>
                 <p><b>개발 기간</b> 2022.09.23 - 2022.09.30</p>
@@ -238,16 +277,14 @@
               </div>
               <div class="project-description">
                 <p>
-                  프론트엔드를 담당했습니다. 프로젝트 MVP/다크모드 기능/
-                  페이지네이션 기능/전체적인 스타일 정리를 맡았으며, 개인적으로
+                  프론트엔드 담당으로 프로젝트 MVP/다크모드 기능/ 페이지네이션
+                  기능/전체적인 스타일 정리를 담당했습니다. 개인적으로
                   localStorage를 이해하기 위해 모달창을 하루동안 보지 않는
                   기능을 추가 구현 했습니다.
                 </p>
                 <p><b>참여 인원</b> 6명</p>
                 <p><b>개발 기간</b> 2022.08 (2주간 진행)</p>
-                <p>
-                  <b>기술 스택</b> React, Node, Styled-components, Bootstrap
-                </p>
+                <p><b>기술 스택</b> React, Styled-components, Bootstrap</p>
               </div>
               <div class="project-button">
                 <a class="project-site-Btn" target="_blank">SITE</a>
@@ -262,15 +299,18 @@
             <div class="swiper-slide slide03">
               <div class="project-title"><b>03</b> 등산 커뮤니티</div>
               <div class="project-img">
-                <img src="img/project-portfolio.png" alt="등산 커뮤니티" />
+                <img src="img/project-cleanhikers.png" alt="등산 커뮤니티" />
               </div>
               <div class="project-description">
-                <p>user파트 담당</p>
+                <p>
+                  프론트엔드 담당으로 회원가입, 로그인, 유저 정보 조회 및 수정,
+                  유저 개인 작성 글 모아보기 기능을 구현했습니다. 상황에 따라
+                  필요한 validation과 코드의 가독성 및 유지보수성을 고려하여
+                  진행했습니다.
+                </p>
                 <p><b>참여 인원</b> 6명</p>
                 <p><b>개발 기간</b> 2022.10.03 - 2022.10.21</p>
-                <p>
-                  <b>기술 스택</b> React, JavaScript, Styled-Components, Ant-d
-                </p>
+                <p><b>기술 스택</b> React, Styled-Components, Ant-design</p>
               </div>
               <div class="project-button">
                 <a
@@ -326,7 +366,8 @@
                 <p>
                   기본 html, css, javascript만으로 구현한 포트폴리오 페이지
                   입니다. 스크롤 이벤트와 반응형 디자인에 대해 익혔습니다.
-                  Swiper와 Typewriter 라이브러리도 활용했습니다.
+                  Swiper 라이브러리로 슬라이더를 구현했고, Typewriter, AOS
+                  라이브러리로 애니메이션 효과를 넣었습니다.
                 </p>
                 <p><b>참여 인원</b> 1명</p>
                 <p><b>개발 기간</b> 22.08 - 22.09</p>
@@ -348,15 +389,14 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="pagination_container">
-          <div class="swiper-pagination"></div>
-        </div>
+        </section>
       </div>
     </main>
     <footer id="contact">
-      <h2>CONTACT</h2>
-      <div id="footer-contact">
+      <div class="menu-block">
+        <h2>CONTACT</h2>
+      </div>
+      <section id="footer-contact">
         <form
           id="form"
           method="POST"
@@ -365,7 +405,7 @@
         >
           <div class="input-box1">
             <div>
-              <span>Name</span>
+              <p>Name</p>
               <input
                 id="send-name"
                 type="name"
@@ -375,7 +415,7 @@
               />
             </div>
             <div>
-              <span>Your Email</span>
+              <p>Your Email</p>
               <input
                 id="send-email"
                 type="email"
@@ -387,7 +427,7 @@
           </div>
           <div class="input-box2">
             <div>
-              <span>Message</span>
+              <p>Message</p>
               <textarea
                 id="send-message"
                 type="message"
@@ -439,7 +479,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <p class="copyright">Copyright 2022. ohyoonah. all rights reserved.</p>
     </footer>
     <script src="email.js"></script>
