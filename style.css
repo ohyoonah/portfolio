@@ -268,7 +268,7 @@ h2 {
 }
 
 .skill-item {
-  width: 20%;
+  width: 15%;
   margin: 2rem 1rem;
   position: relative;
   display: flex;
@@ -349,8 +349,17 @@ h2 {
   margin-bottom: 15px;
 }
 
-.project-description > p > b {
+.project-skill > p > b {
   margin-right: 10px;
+}
+
+.project-skill {
+  display: flex;
+}
+
+.project-skill img {
+  width: 30px;
+  margin-right: 0.3rem;
 }
 
 .project-button {
